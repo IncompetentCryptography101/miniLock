@@ -31,7 +31,7 @@ miniLock.util = {}
 // Notes: Validates if string is a proper miniLock ID.
 miniLock.util.validateID = function(id) {
 	var base58Match = new RegExp(
-		'^[1-9ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz]+$'
+		'^[1-9A-Za-z]+$'
 	)
 	if (
 		(id.length > 50) ||
